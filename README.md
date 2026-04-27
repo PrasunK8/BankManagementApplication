@@ -1,0 +1,117 @@
+🏦 Bank Management System (Python + Streamlit)
+
+A simple yet functional Bank Management System built using Python with both CLI (Command Line Interface) and Streamlit Web UI support.
+This project demonstrates core banking operations with file-based data persistence using JSON.
+
+---
+
+🚀 Features
+
+• Create Account (with validation)
+• Deposit Money (limit: ₹50,000 per transaction)
+• Withdraw Money (limit: ₹10,000 per transaction)
+• View Account Details
+• Update User Information
+• Delete Account
+• Secure login using PIN authentication
+• Auto-generated Account Number & Customer ID
+• Persistent storage using JSON file
+
+---
+
+🖥️ Interfaces
+
+1. Streamlit Web App
+
+• Interactive UI for users
+• Sidebar-based navigation
+• Easy form inputs for all banking operations
+
+Implemented in:
+app.py
+
+---
+
+2. Command Line Interface (CLI)
+
+• Menu-driven terminal application
+• Ideal for understanding backend logic
+
+Implemented in:
+code.py
+
+---
+
+⚙️ Core Logic
+
+• All banking operations are handled by the Bank class
+• Data is stored in data.json
+• Unique account numbers are generated randomly
+• Customer IDs include alphanumeric + special characters
+
+Backend logic file:
+bank.py
+
+---
+
+📁 Project Structure
+
+Bank-Management-System/
+│
+├── app.py
+├── bank.py
+├── code.py
+├── data.json
+├── README.md
+└── requirements.txt
+
+---
+
+🧠 Concepts Used
+
+• Object-Oriented Programming (OOP)
+• File Handling (JSON)
+• Input Validation
+• Random Data Generation
+• Streamlit for UI
+• Exception Handling
+
+---
+
+▶️ How to Run
+
+Run Streamlit App
+
+streamlit run app.py
+
+Run CLI Version
+
+python code.py
+
+---
+
+🔐 Validations Implemented
+
+• Minimum age: 18+
+• PIN must be exactly 4 digits
+• Deposit limit: ₹1 – ₹50,000
+• Withdrawal limit: ₹1 – ₹10,000
+• Insufficient balance check
+
+---
+
+📌 Future Improvements
+
+• Add database (SQLite / MySQL)
+• Implement login/signup system
+• Add transaction history
+• Enhance security (hashing PINs)
+• Deploy on cloud (Streamlit Cloud / AWS)
+
+---
+
+📜 License
+
+This project is for educational purposes.
+
+---
